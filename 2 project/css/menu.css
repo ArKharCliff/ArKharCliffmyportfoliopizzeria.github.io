@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    padding: 2rem;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.skip a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.skip a:hover {
+    color: #110df6;
+}
+#maincontent{
+    font-size: xx-large;
+}
+.ourmenu p {
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid;
+    height: 50px;
+    text-align: center;
+    background-color: rgb(230, 223, 13);
+}
+.pizzasmenu img{
+    height: 150px;
+    width: 150px;
+    display: unset;
+}
+.pizzasmenu p{
+    display: inline-block;
+    font-size: 25px;
+    display: unset;
+}
+.pizzasmenu p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* .pizzasmenu p{
+    display: inline;
+    text-align: center;
+}
+.pizzasmenu{
+    display: inline-block;
+}
+    */
+.repeatpizzasmenu{
+    display: grid;
+    width: 40%;
+}
+.repeatpizzasmenu img{
+    display: grid;
+    width: 40%;
+}
+.imagepizzasmenu img{
+    width: 150px;
+    height: 150px;
+}
+.imagepizzasmenu{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.newimagepizzasmenu img{
+  width: 150px;
+  height: 150px;
+}
+.newimagepizzasmenu p {
+    display: inline;
+}
+.jumptothetop a{
+    height: 100px;
+    margin-top: 000px;
+    text-decoration: none;
+    position: relative;
+    margin-left: 100px;
+}
+footer{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    margin-top: 700px;
+    clear: both;
+}
+footer ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}

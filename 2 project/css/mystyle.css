@@ -1,0 +1,172 @@
+:root {
+    --color-bg: #F8F4F0;
+    --color-body: #1F1F1F;
+    --navmenua: aqua;
+    --navmenua-txt: gray;
+    --pizzaalot: #ffeb3b;
+    --pizzaalot-txt: black;
+    --listgreenul: rgb(244, 233, 221);
+    --noclasslist-ul: black;
+    --footer-bg: black;
+    --footer-txt: aliceblue;
+}
+.darkstyle{
+    --color-bg: #1F1F1F;
+    --color-body: #F8F4F0;
+    --color-primary: #3E698E;
+    --color-secondary: #F5EDBD;
+    --navmenua: green;
+    --navmenua-txt: white;
+    --pizzaalot: black;
+    --pizzaalot-txt: #ffeb3b;
+    --listgreenul: #ffeb3b;
+    --noclasslist-ul: white;
+    --footer-bg: aliceblue;
+    --footer-txt: black;
+}
+
+.upper{
+    font-family: 'Verdana', Courier, monospace;
+}
+.upper h1{
+    text-align: center;
+    color: var(--color-body);
+}
+.upper h2{
+    color: var(--color-body);
+}
+.upper h3{
+    color: var(--color-body);
+}
+#theme-switch{
+   height: 50px;
+   width: 50px;
+   padding: 0;
+   border-radius: 50%;
+   background-color: var(--color-bg);
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   position: fixed;
+   top: 100px;
+   right: 60px;
+}
+#theme-switch svg{
+    fill: var(--color-body);
+}
+#theme-switch svg:last-child{
+    display: none;
+}
+.darkstyle #theme-switch svg:first-child{
+    display: none;
+}
+.darkstyle #theme-switch svg:last-child{
+    display: block;
+}
+.navmenu{
+    position: relative;
+    background-color: aqua;
+}
+.navmenu nav{
+    background: black;
+    padding: 1rem;
+}
+.navmenu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.navmenu a{
+    text-decoration: none;
+    background-color: var(--navmenua);
+    color: var(--navmenua-txt);
+    justify-content: space-around;
+}
+.navmenu a:hover {
+    text-decoration: none;
+    background-color: aqua;
+    color: blueviolet;
+}
+.navmeny ul li{
+    display: inline;
+}
+.skip a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.skip a:hover {
+    color: #110df6;
+}
+.pizzaalot{
+    font-size: xx-large;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--pizzaalot);
+    border: 15cap;
+    color: var(--pizzaalot-txt);
+    border-radius: 14%;
+}
+.ouradvantages{
+    font-size: large;
+    text-align: left;
+    color: var(--color-body);
+
+}
+.listred ul{
+ list-style-image: url(/images/redcirclefixed.png);
+ background-color: var(--listgreenul);
+}
+.listred li{
+    color: crimson;
+}
+.listgreen ul{
+    background-color: var(--listgreenul);
+}
+.listgreen li{
+    color: green;
+    width: 100px;
+    display: flexbox;
+}
+.listblue ul{
+    background-color: var(--listgreenul);;
+}
+.listblue li{
+    color: blue;
+}
+.listbrown ul{
+   list-style-image: url(/images/browncircle.png);
+}
+.listbrown li{
+    background-color: #0c4560;
+    color: burlywood;
+}
+.imagemainpizzaassorti img{
+    width: 200px;
+    height: 300px;
+    display: block;
+}
+.noclasslist ul{
+    display: grid;
+    list-style: lower-alpha;
+    color: var(--noclasslist-ul);
+}
+.jumptothetopbutton a{
+    text-decoration: none;
+}
+.footer{
+    background-color: var(--footer-bg);
+    color: var(--footer-txt);
+    text-align: center;
+}
+.footer ul {
+    list-style-type: none;
+}
+.footer a{
+    color: var(--footer-txt);
+    text-decoration: none;
+}
+body{
+    background-color: var(--color-bg);
+}

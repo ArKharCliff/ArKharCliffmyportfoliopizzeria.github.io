@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/interactive.css">
+</head>
+<body>
+         <div class="container">
+    <h1>Interactive gallery</h1>
+    <div class="img-container">
+        <div class="img">
+          <img src="images/pizza4seasons.png" alt="">
+        </div>
+        <div class="img">
+          <img src="images/pizzacarbonara.png" alt="">
+
+        </div>
+        <div class="img">
+          <img src="images/pizzamargarita.png" alt="">
+
+        </div>
+        <div class="img">
+          <img src="images/pizzapeperoni.png" alt="">
+
+        </div>
+        <div class="img">
+          <img src="images/pizzastraccatella.png" alt="">
+
+        </div>
+    </div>
+
+     <div class="pop-up">
+       <span>&times;</span>
+       <img src="images/pizzapeperoni.png" alt="">
+        <img src="images/pizzacarbonara.png" alt="">
+        <img src="images/pizzastraccatella.png" alt="">
+        <img src="images/pizza4seasons.png" alt="">
+        <img src="images/pizzamargarita.png" alt="">
+
+     </div>
+
+    </div>
+<div class="goback">
+<a href="indexnew.html">go back</a>
+</div>
+<script>
+      document.querySelectorAll('.img-container img').forEach(img =>{
+            img.onclick = () => {
+              document.querySelector('.pop-up').style.display = 'block';
+              document.querySelector('.pop-up img').src = img.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.pop-up span').onclick = () =>{
+            document.querySelector('.pop-up').style.display = 'none';
+        }
+
+</script> 
+</body>
+</html>
